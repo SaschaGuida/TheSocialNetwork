@@ -1,0 +1,65 @@
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.notification-image {
+    width: 20px;
+    height: 20px;
+}
+
+.infoprofile, .newsprofile {
+    width: 300px;
+    height: 100vh;
+    margin-top: 70px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+.newsprofile {
+    width: 100%;
+}
+
+.navbar-toggler {
+    display: none;
+  }
+
+
+
+
+
+@media (min-width: 992px) {
+    .newsprofile {
+      height: 100vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .infoprofile .card-body {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+    .navbar-collapse.collapse {
+        display: flex !important;
+        justify-content: flex-start;
+      }
+  
+      .navbar-nav {
+        flex-direction: row !important;
+      }
+  
+      .navbar-nav .nav-item {
+        display: flex !important;
+        flex-direction: row;
+      }
+      
+    .search {
+        display: none !important;
+    } 
+}
+
+@media (max-width: 576px) {
+    .newsprofile {
+      width: 100%;
+    }
+}
